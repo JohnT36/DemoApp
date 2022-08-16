@@ -1,16 +1,6 @@
 ﻿@model Product
 
-<!DOCTYPE html>
 
-<html>
-
-    <head>
-         <link rel="stylesheet" href="~/css/StyleSheet1.css"/>
-
-
-    </head>
-
-    <body>
 
         <div class="intro">
 
@@ -55,10 +45,10 @@
         <input type="hidden" asp-for="ProductID" value="@Model.ProductID" />
         <input  type="submit" onclick="return confirm('Permanently delete @Model.Name?')" value="Delete item" class="delete-button" />
     }
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/StyleSheet1.css" type="text/css" />
+}
         
 
 
-
-    </body>
-
-</html>
