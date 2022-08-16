@@ -1,0 +1,64 @@
+﻿@model Product
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+         <link rel="stylesheet" href="~/css/StyleSheet1.css"/>
+
+
+    </head>
+
+    <body>
+
+        <div class="intro">
+
+            <h3>@Model.Name</h3>
+
+        </div>
+
+        <div>
+        <table class="table">
+             
+            <thead>
+            <tr>
+                    <th>ProductID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Sold</th>
+                    <th>Pic(URL)</th>
+               
+            
+                </tr>
+            </thead>
+
+            <tbody>
+             
+                <tr>
+                    <td>@Model.ProductID</td>
+                    <td>@Model.Name</td>
+                    <td>@Model.Price</td>
+                    <td>@Model.CategoryID</td>
+                    <td>@Model.Sold</td>
+                    <td>@Model.Url</td>
+        
+                </tr>    
+            </tbody>
+        </table>
+        </div>
+        
+        
+    @using (Html.BeginForm("DeleteProduct", "Product", "Post"))
+    {
+        <input type="hidden" asp-for="ProductID" value="@Model.ProductID" />
+        <input  type="submit" onclick="return confirm('Permanently delete @Model.Name?')" value="Delete item" class="delete-button" />
+    }
+        
+
+
+
+    </body>
+
+</html>

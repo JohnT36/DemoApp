@@ -1,0 +1,115 @@
+﻿body {
+    background-color: black;
+    color: white;
+}
+
+.intro {
+    text-align: center;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.intro-pic {
+    height: 100%;
+}
+
+.feat {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.half-width {
+    width: 48%;
+    float: left;
+    height: 500px;
+}
+
+div.product {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    height: 120px;
+    display: flex;
+}
+
+div.product-img {
+    margin-left: 15px;
+    height: 100%;
+    width: 33.33%;    
+   
+}
+
+#pic {
+    margin-top: 10px;
+    width: 60%;
+    height: 80%;
+}
+
+#productdiv1 {
+     
+    width: 33%;
+}
+
+#productdiv2 {
+    
+    width:33%;
+    color: yellow;
+}
+
+#productdiv3 {
+
+    width:33%;
+    margin-top: 15px;
+}
+
+a#item-button {
+    border-radius:10px ;
+    background-color: yellow;
+}
+
+
+
+button.info-button {
+        background-color: saddlebrown;
+        margin-top: 30px;
+        border-radius:5px;
+        
+}
+
+button.update-button {
+    background-color: goldenrod;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.creates {
+    background-color: forestgreen;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+
+.delete-button {
+    background-color: maroon;
+    margin-top: 30px;
+    border-radius: 5px;
+    
+    
+}
+
+.deleted {
+
+    color:aquamarine;
+}
+
+.featbox {
+    margin-top:10px;
+}
+
+

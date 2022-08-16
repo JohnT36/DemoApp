@@ -1,0 +1,106 @@
+﻿.container {
+    width: 1050px;
+
+    
+}
+body {
+    background-color: black;
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+.intro{
+    text-align:center;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feat {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    width: 100%;
+}
+
+div.product {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    text-align: center;
+    display:flex;
+
+
+}
+div.product-img {
+    margin-left: 15px;
+    height: 100%;
+    width: 33.33%;
+    background-color: blue;
+    float: left;
+
+}
+div.product-update {
+    
+   background-color:crimson;
+}
+
+div.product-des {
+    
+    border: 1px dotted khaki;
+    width:33.33%;
+    text-align: center;
+    color: yellow;
+    margin-left: 45px;
+   
+}
+#pic {
+    width: 70px;
+    height: 65px;
+}
+
+.intro-pic{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    float:left;
+    margin-left: 0px;
+}
+
+
+div.description {
+    font-size: 18px;
+    border: 2px solid darkred;    
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    text-align: right;
+    float:right;
+    
+}
+
+.review {
+    margin-top: 520px;
+    
+    
+}
+
+
+
+
+
+
+
+#center {
+    text-align:center;
+}
+
+button.create {
+    background-color: goldenrod;
+    margin-top: 30px;
+}

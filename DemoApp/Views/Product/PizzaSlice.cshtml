@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Product>
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="~/css/StyleSheet1.css" />
+        
+    </head>
+
+    <body>
+
+
+         <div class="intro">
+            <h1> Pizza Slices</h1>
+            <p>Cheese Pepperoni Veggielovers Meatlovers</p>    
+        </div>
+        <div class=" feat">
+            <div class="featbox">
+                <p>
+                    All Pizzas made with Fresh Never Frozen Dough, Fresh Ingredients, and Mozz Romona Ricotta cheese!
+                 </p>
+            </div>
+        </div>
+        @foreach (var product in Model)
+        {
+        <div class=" product">
+            
+            <div id="productdiv1">
+                <img id="pic" src='@product.Url' alt='@product.Name' />
+            </div>
+           <div id="productdiv2">
+                <h4>@product.Name</h4>
+                <p>@product.Ingredients</p>
+                <div>
+                    @product.Price for each @product.Name
+                </div>
+           </div>
+           
+               <form action="/Product/ViewProduct/@product.ProductID">
+                   <button class="info-button">View Item</button>
+               </form>
+             
+              <form action="/Product/UpdateProduct/@product.ProductID">
+                  <button class="update-button">Update Item</button>
+              </form>
+    
+              
+               
+               @using (Html.BeginForm("DeleteProduct", "Product", "Post"))
+    {
+            <input type="hidden" asp-for="@product.ProductID" value="@product.ProductID" />
+            <input type="submit" onclick="return confirm('Are you sure you want to permanently delete @product.Name? ')" value="Delete Item" class="delete-button" />
+    }
+
+
+            </div>
+
+             
+        }
+       
+
+
+
+
+    </body>
+</html>
