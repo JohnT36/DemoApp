@@ -1,4 +1,8 @@
-﻿body {
+﻿* {
+    color: black;
+}
+
+body {
     background-color: black;
     color: white;
 }
@@ -83,6 +87,9 @@ div.product-img {
     height: 500px;
     border: 2px solid darkred;
     border-radius: 10px;
+    
+    
+    
 }
 
 
@@ -127,6 +134,12 @@ button.update-button {
 .updates {
     background-color: #1b6ec2;
     border-radius: 5px;
+}
+
+.italian-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://t4.ftcdn.net/jpg/02/28/52/59/360_F_228525906_2UbyAzLESIy42de9meVjXkdMzueGoIqg.jpg')
 }
 
 
