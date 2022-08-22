@@ -1,12 +1,10 @@
 ﻿@model Product
 
+<div class="intro">
 
+ <h3>@Model.Name</h3>
 
-        <div class="intro">
-
-            <h3>@Model.Name</h3>
-
-        </div>
+</div>
 
         <div>
         <table class="table">
@@ -38,6 +36,9 @@
             </tbody>
         </table>
         </div>
+<form action="/Product/UpdateProduct/@Model.ProductID">
+    <button class="updates"> Update </button>
+</form>
         
         
     @using (Html.BeginForm("DeleteProduct", "Product", "Post"))

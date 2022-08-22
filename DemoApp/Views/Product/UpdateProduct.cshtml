@@ -1,20 +1,6 @@
 ﻿@model Product
 
-<!DOCTYPE html>
-
-<html>
-
-    <head>
-
-
-        <link rel="stylesheet" href="~/css/StyleSheet1.css"/>
-
-    </head>
-
-
-    <body>
-
-                    <h2>Update @Model.Name</h2>
+<h2>Update @Model.Name</h2>
 
 
             @using (Html.BeginForm("UpdateProductToDatabase", "Product", "Post"))
@@ -28,10 +14,13 @@
     <input type="text" name="Url" class="form-control" value="@Model.Url" />
     <label asp-for="Ingredients" class="control-label">Ingredients</label>
     <input type="text" name="Ingredients" class="form-control" value="@Model.Ingredients" />
-    <br/>
+    <br />
+    
+    <input type="hidden" name="CategoryID" value="@Model.CategoryID" />
+    <br />
     <input type="submit" value="Update Product" class="btn btn-primary" />
 }
 
-    </body>
-
-</html>
+@section Styles {
+    <link rel="stylesheet" href="~/css/StyleSheet1.css" />
+}
