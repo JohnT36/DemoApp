@@ -39,7 +39,10 @@ namespace DemoApp.Repositories
         
         public void UpdateProduct(Product product)
         {
-
+            if (product.CategoryID == 0)
+            {
+                
+            }
             _conn.Execute($@"UPDATE products SET Name = @Name,
                                                  Price = @Price,
                                                  CategoryID = @CategoryID,

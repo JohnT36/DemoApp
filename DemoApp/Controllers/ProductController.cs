@@ -131,32 +131,6 @@ namespace DemoApp.Controllers
                 default: return RedirectToAction("Error");
                 
             };
-
-
-           //if (product.CategoryID == 1)
-           //{
-           //    return RedirectToAction("PizzaPie");
-           //}
-           //else if (product.CategoryID == 2)
-           //{
-           //    return RedirectToAction("PizzaSlice");
-           //}
-           //else if (product.CategoryID == 3)
-           //{
-           //    return RedirectToAction("Salad");
-           //}
-           //else if (product.CategoryID == 4)
-           //{
-           //    return RedirectToAction("Dessert");
-           //}
-           //else 
-           //{
-           //    return RedirectToAction("Drink");
-           //}
-            
-
-
-            
         }
 
         public IActionResult Error()
