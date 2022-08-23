@@ -22,11 +22,6 @@ body {
     border-radius: 10px;
 }
 
-.creates-div {
-
-    margin-top: 10px;
-}
-
 .feat {
     margin-bottom: 10px;
     text-align: center;
@@ -72,7 +67,11 @@ div.product-img {
     margin-top: 10px;
     width: 60%;
     height: 80%;
-    tr
+    
+}
+
+#paragraph {
+    font-weight: bold;
 }
 
 #productdiv1 {
@@ -132,11 +131,6 @@ button.update-button {
     border-radius: 5px;
     
     
-}
-
-.deleted {
-
-    color:aquamarine;
 }
 
 .featbox {
